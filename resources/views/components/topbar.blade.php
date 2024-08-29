@@ -10,20 +10,14 @@
             </div>
             <div class="col-lg-6 text-center text-lg-right">
                 <div class="d-inline-flex align-items-center">
-                    <a class="text-primary px-3" href="">
-                        <i class="fab fa-facebook-f"></i>
+                    <a class="text-primary px-3" href="https://t.me/DMO_Karakalpakstan">
+                        <i class="fab fa-telegram"></i>
                     </a>
-                    <a class="text-primary px-3" href="">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a class="text-primary px-3" href="">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a class="text-primary px-3" href="">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a class="text-primary pl-3" href="">
+                    <a class="text-primary px-3" href="https://www.youtube.com/@DMOKarakalpakstan">
                         <i class="fab fa-youtube"></i>
+                    </a>
+                    <a class="text-primary pl-3" href="https://www.instagram.com/dmo_karakalpakstan?igsh=Nzh3dmpybDBnN3Fr">
+                        <i class="fab fa-instagram"></i>
                     </a>
                 </div>
             </div>

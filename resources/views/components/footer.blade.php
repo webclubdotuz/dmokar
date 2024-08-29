@@ -7,10 +7,9 @@
             <p>Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet labore rebum lorem ipsum dolor. No sed vero lorem dolor dolor</p>
             <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
             <div class="d-flex justify-content-start">
-                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-outline-primary btn-square mr-2" href="https://t.me/DMO_Karakalpakstan" target="_blank"><i class="fab fa-telegram"></i></a>
+                <a class="btn btn-outline-primary btn-square mr-2" href="https://www.instagram.com/dmo_karakalpakstan?igsh=Nzh3dmpybDBnN3Fr" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-outline-primary btn-square mr-2" href="https://www.youtube.com/@DMOKarakalpakstan" target="_blank"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-5">
