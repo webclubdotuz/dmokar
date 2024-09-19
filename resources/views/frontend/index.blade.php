@@ -80,60 +80,23 @@
             <h1>The best places to visit in Karakalpakstan region</h1>
         </div>
         <div class="row">
+            @foreach ($what_to_sees as $what_to_sees)
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="destination-item position-relative overflow-hidden mb-2">
-                    <img class="img-fluid" src="/frontend/img/destination-1.jpg" alt="">
+                    <img class="img-fluid" src="/storage/{{ $what_to_sees->image }}" alt="{{ $what_to_sees->title }}">
                     <a class="destination-overlay text-white text-decoration-none" href="">
-                        <h5 class="text-white">United States</h5>
-                        <span>100 Cities</span>
+                        <h5 class="text-white">{{ $what_to_sees->title }}</h5>
                     </a>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="destination-item position-relative overflow-hidden mb-2">
-                    <img class="img-fluid" src="/frontend/img/destination-2.jpg" alt="">
-                    <a class="destination-overlay text-white text-decoration-none" href="">
-                        <h5 class="text-white">United Kingdom</h5>
-                        <span>100 Cities</span>
-                    </a>
-                </div>
+            @endforeach
+
+            <div class="col-12 text-center">
+                <a href="{{ route('what_to_see') }}" class="btn btn-primary py-md-3 px-md-5 mt-2">
+                    Load More
+                </a>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="destination-item position-relative overflow-hidden mb-2">
-                    <img class="img-fluid" src="/frontend/img/destination-3.jpg" alt="">
-                    <a class="destination-overlay text-white text-decoration-none" href="">
-                        <h5 class="text-white">Australia</h5>
-                        <span>100 Cities</span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="destination-item position-relative overflow-hidden mb-2">
-                    <img class="img-fluid" src="/frontend/img/destination-4.jpg" alt="">
-                    <a class="destination-overlay text-white text-decoration-none" href="">
-                        <h5 class="text-white">India</h5>
-                        <span>100 Cities</span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="destination-item position-relative overflow-hidden mb-2">
-                    <img class="img-fluid" src="/frontend/img/destination-5.jpg" alt="">
-                    <a class="destination-overlay text-white text-decoration-none" href="">
-                        <h5 class="text-white">South Africa</h5>
-                        <span>100 Cities</span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="destination-item position-relative overflow-hidden mb-2">
-                    <img class="img-fluid" src="/frontend/img/destination-6.jpg" alt="">
-                    <a class="destination-overlay text-white text-decoration-none" href="">
-                        <h5 class="text-white">Indonesia</h5>
-                        <span>100 Cities</span>
-                    </a>
-                </div>
-            </div>
+
         </div>
     </div>
 </div>

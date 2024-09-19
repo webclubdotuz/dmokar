@@ -20,11 +20,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/travelers', [App\Http\Controllers\HomeController::class, 'travelers'])->name('travelers');
 
+Route::get('/what-to-see', [App\Http\Controllers\HomeController::class, 'what_to_see'])->name('what_to_see');
+Route::get('/what-to-see/{id}', [App\Http\Controllers\HomeController::class, 'what_to_see_show'])->name('what_to_see.show');
+
+
 Route::get('/about', function () {
     return view('frontend.about');
-});
-
-
-Route::get('/what-to-see', function () {
-    return view('frontend.what_to_see');
 });
