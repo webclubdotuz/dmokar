@@ -12,7 +12,7 @@
                     <a href="/about" class="nav-item nav-link active">About Karakalpakstan</a>
                     <a href="/what-to-see" class="nav-item nav-link">What to see in Karakalpakstan</a>
                     <a href="/" class="nav-item nav-link">About us</a>
-                    <a href="/" class="nav-item nav-link">Info for travelers</a>
+                    <a href="{{ route('travelers') }}" class="nav-item nav-link">Info for travelers</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
                             Language

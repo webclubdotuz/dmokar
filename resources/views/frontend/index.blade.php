@@ -140,40 +140,6 @@
 <!-- Destination Start -->
 
 
-<!-- Service Start -->
-<div class="container-fluid py-5">
-    <div class="container pt-5 pb-3">
-        <div class="text-center mb-3 pb-3">
-            <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Services</h6>
-            <h1>Tours & Travel Services</h1>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="service-item bg-white text-center mb-2 py-5 px-4">
-                    <i class="fa fa-2x fa-route mx-auto mb-4"></i>
-                    <h5 class="mb-2">Travel Guide</h5>
-                    <p class="m-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem est amet labore</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="service-item bg-white text-center mb-2 py-5 px-4">
-                    <i class="fa fa-2x fa-ticket-alt mx-auto mb-4"></i>
-                    <h5 class="mb-2">Ticket Booking</h5>
-                    <p class="m-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem est amet labore</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="service-item bg-white text-center mb-2 py-5 px-4">
-                    <i class="fa fa-2x fa-hotel mx-auto mb-4"></i>
-                    <h5 class="mb-2">Hotel Booking</h5>
-                    <p class="m-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem est amet labore</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Service End -->
-
 
 <!-- Packages Start -->
 <div class="container-fluid py-5">
@@ -183,119 +149,30 @@
             <h1>Pefect Tour Packages</h1>
         </div>
         <div class="row">
+            @foreach($travelers as $traveler)
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="package-item bg-white mb-2">
-                    <img class="img-fluid" src="/frontend/img/package-1.jpg" alt="">
+                    <img class="img-fluid" src="/storage/{{ $traveler->image }}" alt="{{ $traveler->title }}">
                     <div class="p-4">
                         <div class="d-flex justify-content-between mb-3">
-                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                            <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                            <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
+                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>{{ $traveler->country }}</small>
                         </div>
-                        <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
+                        <a class="h5 text-decoration-none" href="">{{ $traveler->title }}</a>
                         <div class="border-top mt-4 pt-4">
                             <div class="d-flex justify-content-between">
                                 <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                <h5 class="m-0">$350</h5>
+                                <h5 class="m-0">{{ $traveler->price }} uzs </h5>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="package-item bg-white mb-2">
-                    <img class="img-fluid" src="/frontend/img/package-2.jpg" alt="">
-                    <div class="p-4">
-                        <div class="d-flex justify-content-between mb-3">
-                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                            <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                            <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
-                        </div>
-                        <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
-                        <div class="border-top mt-4 pt-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                <h5 class="m-0">$350</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="package-item bg-white mb-2">
-                    <img class="img-fluid" src="/frontend/img/package-3.jpg" alt="">
-                    <div class="p-4">
-                        <div class="d-flex justify-content-between mb-3">
-                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                            <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                            <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
-                        </div>
-                        <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
-                        <div class="border-top mt-4 pt-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                <h5 class="m-0">$350</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="package-item bg-white mb-2">
-                    <img class="img-fluid" src="/frontend/img/package-4.jpg" alt="">
-                    <div class="p-4">
-                        <div class="d-flex justify-content-between mb-3">
-                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                            <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                            <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
-                        </div>
-                        <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
-                        <div class="border-top mt-4 pt-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                <h5 class="m-0">$350</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="package-item bg-white mb-2">
-                    <img class="img-fluid" src="/frontend/img/package-5.jpg" alt="">
-                    <div class="p-4">
-                        <div class="d-flex justify-content-between mb-3">
-                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                            <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                            <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
-                        </div>
-                        <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
-                        <div class="border-top mt-4 pt-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                <h5 class="m-0">$350</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="package-item bg-white mb-2">
-                    <img class="img-fluid" src="/frontend/img/package-6.jpg" alt="">
-                    <div class="p-4">
-                        <div class="d-flex justify-content-between mb-3">
-                            <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                            <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                            <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
-                        </div>
-                        <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
-                        <div class="border-top mt-4 pt-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                <h5 class="m-0">$350</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            @endforeach
+
+            <div class="col-12 text-center">
+                <a href="{{ route('travelers') }}" class="btn btn-primary py-md-3 px-md-5 mt-2">
+                    Load More
+                </a>
             </div>
         </div>
     </div>

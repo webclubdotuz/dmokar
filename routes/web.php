@@ -13,9 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.index');
-});
+// Route::get('/', function () {
+//     return view('frontend.index');
+// });
+
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/travelers', [App\Http\Controllers\HomeController::class, 'travelers'])->name('travelers');
 
 Route::get('/about', function () {
     return view('frontend.about');
