@@ -5,26 +5,20 @@
 <div class="container-fluid p-0">
     <div id="header-carousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
+            @foreach ($what_to_sees->take(3) as $what_to_see)
             <div class="carousel-item active">
                 <img class="w-100" src="/frontend/img/carousel-1.jpg" alt="Image">
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
                         <h4 class="text-white text-uppercase mb-md-3">What to see in Karakalpakstan</h4>
-                        <h1 class="display-3 text-white mb-md-4">Ancient Shilpik</h1>
-                        <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">load more</a>
+                        <h1 class="display-3 text-white mb-md-4">{{ $what_to_see->title }}</h1>
+                        <a href="{{ route('what_to_see') }}" class="btn btn-primary py-md-3 px-md-5 mt-2">
+                            Learn More
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img class="w-100" src="/frontend/img/carousel-2.jpg" alt="Image">
-                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                    <div class="p-3" style="max-width: 900px;">
-                        <h4 class="text-white text-uppercase mb-md-3">What to see in Karakalpakstan</h4>
-                        <h1 class="display-3 text-white mb-md-4">Discover Amazing Places With Us</h1>
-                        <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Book Now</a>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
         <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
             <div class="btn btn-dark" style="width: 45px; height: 45px;">
@@ -80,12 +74,12 @@
             <h1>The best places to visit in Karakalpakstan region</h1>
         </div>
         <div class="row">
-            @foreach ($what_to_sees as $what_to_sees)
+            @foreach ($what_to_sees as $what_to_see)
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="destination-item position-relative overflow-hidden mb-2">
-                    <img class="img-fluid" src="/storage/{{ $what_to_sees->image }}" alt="{{ $what_to_sees->title }}">
+                    <img class="img-fluid" src="/storage/{{ $what_to_see->image }}" alt="{{ $what_to_see->title }}">
                     <a class="destination-overlay text-white text-decoration-none" href="">
-                        <h5 class="text-white">{{ $what_to_sees->title }}</h5>
+                        <h5 class="text-white">{{ $what_to_see->title }}</h5>
                     </a>
                 </div>
             </div>
