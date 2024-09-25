@@ -4,7 +4,7 @@
 <!-- Carousel Start -->
 <div class="container-fluid p-0">
     <div id="header-carousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner testimonial-carousel">
+        <div class="carousel-inner">
             @foreach ($what_to_sees->take(3) as $what_to_see)
             <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
                 <img class="w-100" src="/storage/{{ $what_to_see->image }}" alt="Image" style="height: 600px; object-fit: cover;">
