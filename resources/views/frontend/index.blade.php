@@ -7,12 +7,12 @@
         <div class="carousel-inner">
             @foreach ($what_to_sees->take(3) as $what_to_see)
             <div class="carousel-item active">
-                <img class="w-100" src="/frontend/img/carousel-1.jpg" alt="Image">
+                <img class="w-100" src="/frontend/img/carousel-1.jpg" alt="Image" style="height: 600px; object-fit: cover;">
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
-                        <h4 class="text-white text-uppercase mb-md-3">What to see in Karakalpakstan</h4>
-                        <h1 class="display-3 text-white mb-md-4">{{ $what_to_see->title }}</h1>
-                        <a href="{{ route('what_to_see') }}" class="btn btn-primary py-md-3 px-md-5 mt-2">
+                        <h4 class="text-white text-uppercase mb-md-3" data-aos="fade-up">What to see in Karakalpakstan</h4>
+                        <h1 class="display-3 text-white mb-md-4" data-aos="fade-up" data-aos-delay="100">{{ $what_to_see->title }}</h1>
+                        <a href="{{ route('what_to_see') }}" class="btn btn-primary py-md-3 px-md-5 mt-2" data-aos="fade-up" data-aos-delay="100">
                             Learn More
                         </a>
                     </div>
@@ -41,10 +41,10 @@
         <div class="row">
             <div class="col-lg-6" style="min-height: 500px;">
                 <div class="position-relative h-100">
-                    <img class="position-absolute w-100 h-100" src="/frontend/img/about.jpg" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="/frontend/img/about.jpg" style="object-fit: cover;" data-aos="fade-up">
                 </div>
             </div>
-            <div class="col-lg-6 pt-5 pb-lg-5">
+            <div class="col-lg-6 pt-5 pb-lg-5" data-aos="fade-down">
                 <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
                     <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">About Us</h6>
                     <h1 class="mb-3">Excursion to historical sites of the Republic of Karakalpakstan</h1>
@@ -69,13 +69,13 @@
 <!-- Destination Start -->
 <div class="container-fluid py-5">
     <div class="container pt-5 pb-3">
-        <div class="text-center mb-3 pb-3">
+        <div class="text-center mb-3 pb-3" data-aos="fade-up">
             <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Destination</h6>
             <h1>The best places to visit in Karakalpakstan region</h1>
         </div>
         <div class="row">
             @foreach ($what_to_sees as $what_to_see)
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
                 <div class="destination-item position-relative overflow-hidden mb-2">
                     <img class="img-fluid" src="/storage/{{ $what_to_see->image }}" alt="{{ $what_to_see->title }}">
                     <a class="destination-overlay text-white text-decoration-none" href="">
@@ -85,7 +85,7 @@
             </div>
             @endforeach
 
-            <div class="col-12 text-center">
+            <div class="col-12 text-center" data-aos="fade-up">
                 <a href="{{ route('what_to_see') }}" class="btn btn-primary py-md-3 px-md-5 mt-2">
                     Load More
                 </a>
@@ -101,13 +101,13 @@
 <!-- Packages Start -->
 <div class="container-fluid py-5">
     <div class="container pt-5 pb-3">
-        <div class="text-center mb-3 pb-3">
+        <div class="text-center mb-3 pb-3" data-aos="fade-up">
             <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Packages</h6>
             <h1>Pefect Tour Packages</h1>
         </div>
         <div class="row">
             @foreach($travelers as $traveler)
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
                 <div class="package-item bg-white mb-2">
                     <img class="img-fluid" src="/storage/{{ $traveler->image }}" alt="{{ $traveler->title }}">
                     <div class="p-4">

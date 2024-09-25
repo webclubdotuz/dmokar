@@ -17,6 +17,8 @@
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Libraries Stylesheet -->
     <link href="/frontend/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -64,6 +66,9 @@
 
     <!-- Template Javascript -->
     <script src="/frontend/js/main.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
