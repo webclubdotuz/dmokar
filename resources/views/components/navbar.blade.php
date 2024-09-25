@@ -15,7 +15,7 @@
                     <a href="{{ route('travelers') }}" class="nav-item nav-link">Info for travelers</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-                            Language
+                            Language {{ session('language') }}
                         </a>
                         <div class="dropdown-menu border-0 rounded-0 m-0">
                             <a href="{{ route('switch-language', 'en') }}" class="dropdown-item">
