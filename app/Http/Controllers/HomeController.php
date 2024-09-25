@@ -46,7 +46,7 @@ class HomeController extends Controller
 
     public function switchLanguage($locale)
     {
-        session()->put('locale', $locale);
+        app()->setLocale($locale);
         return redirect()->back();
     }
 
