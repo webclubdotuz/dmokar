@@ -85,7 +85,7 @@
             </div>
             @endforeach
 
-            <div class="col-12 text-center" data-aos="fade-up">
+            <div class="col-12 text-center" data-aos="fade-left">
                 <a href="{{ route('what_to_see') }}" class="btn btn-primary py-md-3 px-md-5 mt-2">
                     Load More
                 </a>
@@ -126,7 +126,7 @@
             </div>
             @endforeach
 
-            <div class="col-12 text-center">
+            <div class="col-12 text-center" data-aos="fade-left">
                 <a href="{{ route('travelers') }}" class="btn btn-primary py-md-3 px-md-5 mt-2">
                     Load More
                 </a>
