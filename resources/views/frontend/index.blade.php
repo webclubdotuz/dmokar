@@ -7,7 +7,7 @@
         <div class="carousel-inner">
             @foreach ($what_to_sees->take(3) as $what_to_see)
             <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
-                <img class="w-100" src="{{ $what_to_see->image }}" alt="Image" style="height: 600px; object-fit: cover;">
+                <img class="w-100" src="/storage/{{ $what_to_see->image }}" alt="Image" style="height: 600px; object-fit: cover;">
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
                         <h4 class="text-white text-uppercase mb-md-3" data-aos="fade-up">What to see in Karakalpakstan</h4>
