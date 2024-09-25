@@ -42,5 +42,13 @@ class HomeController extends Controller
         return view('frontend.what_to_see.show', compact('what_to_see'));
     }
 
+    // switchLanguage
+
+    public function switchLanguage($locale)
+    {
+        session()->put('locale', $locale);
+        return redirect()->back();
+    }
+
 
 }

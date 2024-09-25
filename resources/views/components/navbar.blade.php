@@ -18,16 +18,16 @@
                             Language
                         </a>
                         <div class="dropdown-menu border-0 rounded-0 m-0">
-                            <a href="" class="dropdown-item">
+                            <a href="{{ route('switch-language', 'en') }}" class="dropdown-item">
                                 English
                             </a>
-                            <a href="" class="dropdown-item">
+                            <a href="{{ route('switch-language', 'ru') }}" class="dropdown-item">
                                 Русский
                             </a>
-                            <a href="" class="dropdown-item">
+                            <a href="{{ route('switch-language', 'kaa') }}" class="dropdown-item">
                                 Qaraqalpaqsha
                             </a>
-                            <a href="" class="dropdown-item">
+                            <a href="{{ route('switch-language', 'uz') }}" class="dropdown-item">
                                 O'zbek
                             </a>
                         </div>
