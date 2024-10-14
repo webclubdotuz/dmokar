@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Post;
 use App\Models\Traveler;
 use App\Models\WhatToSee;
 use Illuminate\Http\Request;
@@ -12,8 +13,9 @@ class HomeController extends Controller
     {
         $travelers = Traveler::orderBy('created_at', 'desc')->limit(6)->get();
         $what_to_sees = WhatToSee::orderBy('created_at', 'desc')->limit(6)->get();
+        $posts = Post::orderBy('created_at', 'desc')->limit(6)->get();
 
-        return view('frontend.index', compact('travelers', 'what_to_sees'));
+        return view('frontend.index', compact('travelers', 'what_to_sees', 'posts'));
     }
 
 
