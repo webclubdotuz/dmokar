@@ -57,7 +57,7 @@
                             <img class="img-fluid" src="/frontend/img/about-2.jpg" alt="">
                         </div>
                     </div>
-                    <a href="" class="btn btn-primary mt-1">Load More</a>
+                    <a href="{{ route('what_to_see') }}" class="btn btn-primary mt-1">Load More</a>
                 </div>
             </div>
         </div>
@@ -78,7 +78,7 @@
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
                 <div class="destination-item position-relative overflow-hidden mb-2">
                     <img class="img-fluid" src="/storage/{{ $what_to_see->image }}" alt="{{ $what_to_see->title }}">
-                    <a class="destination-overlay text-white text-decoration-none" href="">
+                    <a class="destination-overlay text-white text-decoration-none" href="{{ route('what_to_see.show', $what_to_see->id) }}">
                         <h5 class="text-white">{{ $what_to_see->title }}</h5>
                     </a>
                 </div>

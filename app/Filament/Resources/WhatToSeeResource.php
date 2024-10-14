@@ -40,9 +40,16 @@ class WhatToSeeResource extends Resource
                     ->profile('default|simple|full|minimal|none|custom')
                     ->columnSpan('full')
                     ->required(),
-                Forms\Components\FileUpload::make('image')
+                    Forms\Components\FileUpload::make('image')
                     ->image()
-                    ->required(),
+                    ->imageEditor('cropper')
+                    ->imageResizeMode('cover')
+                    ->optimize('jpg')
+                    ->directory('what_to_see')
+                    ->imageCropAspectRatio('16:9')
+                    ->imageEditorAspectRatios([
+                        '16:9',
+                    ])->required(),
                 Forms\Components\Toggle::make('published')
                     ->required(),
             ]);
