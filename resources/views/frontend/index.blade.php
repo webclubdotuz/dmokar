@@ -71,7 +71,7 @@
     <div class="container pt-5 pb-3">
         <div class="text-center mb-3 pb-3" data-aos="fade-up">
             <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Destination</h6>
-            <h1>The best places to visit in Karakalpakstan region</h1>
+            <h1>The best places to visit in Karakalpakstan</h1>
         </div>
         <div class="row">
             @foreach ($what_to_sees as $what_to_see)

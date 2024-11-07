@@ -23,8 +23,8 @@
         </div>
         <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-right">
             <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
-            <p><i class="fa fa-map-marker-alt mr-2"></i>Republic of Karakalpakstan , city of Nukus , G'arezsizlik street , 50</p>
-            <p><i class="fa fa-phone-alt mr-2"></i>+998973550790</p>
+            <p><i class="fa fa-map-marker-alt mr-2"></i>Republic of Karakalpakstan, city of Nukus, Sayaxatshilar street, 10/2</p>
+            <p><i class="fa fa-phone-alt mr-2"></i>+99897355####</p>
             <p><i class="fa fa-envelope mr-2"></i>karakalpakstandmo@gmail.com</p>
         </div>
     </div>
