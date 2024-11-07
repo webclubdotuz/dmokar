@@ -8,9 +8,9 @@
             <video muted autoplay loop style="height: 600px; object-fit: cover;  width: 100%;" >
                 <source src="/video/dmo.mp4" type="video/mp4" style="width: 100%" >
                </video>
-            <div class="carousel-item active">
-                <video muted autoplay loop style="height: 600px;  width: 100%;" >
-                    <source src="/video/dmo.mp4" type="video/mp4" style="width: 100%" >
+            <div class="carousel-item active" style="backdrop-filter: blur(10px)">
+                <video muted autoplay loop style="height: 600px;  " >
+                    <source src="/video/dmo.mp4" type="video/mp4"  >
                    </video>
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
 
