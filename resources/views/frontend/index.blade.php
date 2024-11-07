@@ -12,9 +12,6 @@
                     {{-- <video muted autoplay loop style="height: 600px;  ">
                         <source src="/video/dmo.mp4" type="video/mp4">
                     </video> --}}
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-
-                    </div>
                 </div>
 
 
@@ -190,7 +187,7 @@
 
 
     <!-- Testimonial Start -->
-    <div class="container-fluid py-5">
+    {{-- <div class="container-fluid py-5">
         <div class="container py-5">
             <div class="text-center mb-3 pb-3">
                 <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Testimonial</h6>
@@ -243,7 +240,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Testimonial End -->
 
 
