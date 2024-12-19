@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Partner;
 use App\Models\Post;
 use App\Models\Traveler;
 use App\Models\WhatToSee;
@@ -15,7 +16,10 @@ class HomeController extends Controller
         $what_to_sees = WhatToSee::orderBy('created_at', 'desc')->limit(6)->get();
         $posts = Post::orderBy('created_at', 'desc')->limit(6)->get();
 
-        return view('frontend.index', compact('travelers', 'what_to_sees', 'posts'));
+
+        $partners = Partner::all();
+
+        return view('frontend.index', compact('travelers', 'what_to_sees', 'posts', 'partners'));
     }
 
 
