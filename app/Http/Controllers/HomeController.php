@@ -76,5 +76,12 @@ class HomeController extends Controller
         return view('frontend.about-dmo', compact('page'));
     }
 
+    // post_show
+    public function post_show($id)
+    {
+        $post = Post::find($id);
+
+        return view('frontend.post.show', compact('post'));
+    }
 
 }

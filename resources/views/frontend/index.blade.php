@@ -34,10 +34,15 @@
                 </div>
                 <div class="col-lg-6 pt-5 pb-lg-5" data-aos="fade-down">
                     <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
-                        <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">About Us</h6>
-                        <h1 class="mb-3">Excursion to historical sites of the Republic of Karakalpakstan</h1>
-                        <p>There is a lot of history in these places and you can get acquainted with the history of
-                            Karakalpakstan</p>
+                        <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">
+                            {{__("About Us")}}
+                        </h6>
+                        <h1 class="mb-3">
+                            {{__("Excursion to historical sites of the Republic of Karakalpakstan")}}
+                        </h1>
+                        <p>
+                            {{__("There is a lot of history in these places and you can get acquainted with the history of Karakalpakstan.")}}
+                        </p>
                         <div class="row mb-4">
                             <div class="col-6">
                                 <img class="img-fluid" src="/frontend/img/about-1.jpg" alt="">
@@ -46,7 +51,9 @@
                                 <img class="img-fluid" src="/frontend/img/about-2.jpg" alt="">
                             </div>
                         </div>
-                        <a href="{{ route('what_to_see') }}" class="btn btn-primary mt-1">Load More</a>
+                        <a href="{{ route('what_to_see') }}" class="btn btn-primary mt-1">
+                            {{__("Load More")}}
+                        </a>
                     </div>
                 </div>
             </div>
@@ -59,8 +66,8 @@
     <div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
             <div class="text-center mb-3 pb-3" data-aos="fade-up">
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Destination</h6>
-                <h1>The best places to visit in Karakalpakstan</h1>
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">{{__("Destination")}}</h6>
+                <h1>{{__("The best places to visit in Karakalpakstan region")}}</h1>
             </div>
             <div class="row">
                 @foreach ($what_to_sees as $what_to_see)
@@ -77,7 +84,7 @@
 
                 <div class="col-12 text-center" data-aos="fade-left">
                     <a href="{{ route('what_to_see') }}" class="btn btn-primary py-md-3 px-md-5 mt-2">
-                        Load More
+                        {{__("Load More")}}
                     </a>
                 </div>
 
@@ -92,8 +99,8 @@
     <div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
             <div class="text-center mb-3 pb-3" data-aos="fade-up">
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Packages</h6>
-                <h1>Pefect Tour Packages</h1>
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">{{__("Packages")}}</h6>
+                <h1>{{__("Pefect Tour Packages")}}</h1>
             </div>
             <div class="row">
                 @foreach ($travelers as $traveler)
@@ -119,7 +126,7 @@
 
                 <div class="col-12 text-center" data-aos="fade-left">
                     <a href="{{ route('travelers') }}" class="btn btn-primary py-md-3 px-md-5 mt-2">
-                        Load More
+                        {{__("Load More")}}
                     </a>
                 </div>
             </div>
@@ -191,10 +198,10 @@
         <div class="container py-5">
             <div class="text-center mb-3 pb-3">
                 <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">
-                    Partners
+                    {{__("Partners")}}
                 </h6>
                 <h1>
-                    Our Partners
+                    {{__("Our Partners")}}
                 </h1>
             </div>
             <div class="owl-carousel testimonial-carousel">
@@ -213,8 +220,12 @@
     <div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
             <div class="text-center mb-3 pb-3">
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Our Blog</h6>
-                <h1>Latest From Our Blog</h1>
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">
+                    {{__("Our Blog")}}
+                </h6>
+                <h1>
+                    {{__("Latest From Our Blog")}}
+                </h1>
             </div>
             <div class="row pb-3">
                 @foreach ($posts as $post)
@@ -232,7 +243,7 @@
                                 </div>
                             </div>
                             <div class="bg-white p-4">
-                                <a class="h5 m-0 text-decoration-none" href="#">
+                                <a class="h5 m-0 text-decoration-none" href="{{ route('post.show', $post->id) }}">
                                     {{ $post->title }}
                                 </a>
                             </div>

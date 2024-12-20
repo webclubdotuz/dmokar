@@ -6,14 +6,12 @@
     <div class="container">
         <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
             <h3 class="display-4 text-white text-uppercase text-center">
-                {{ $what_to_see->title }}
+                {{ $post->title }}
             </h3>
             <div class="d-inline-flex text-white">
-                <p class="m-0 text-uppercase"><a class="text-white" href="/">Home</a></p>
+                <p class="m-0 text-uppercase"><a class="text-white" href="/">{{ __('Home') }}</a></p>
                 <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                <p class="m-0 text-uppercase"><a class="text-white" href="{{ route('what_to_see') }}">{{__("menu.What to do in Karakalpakstan")}}</a></p>
-                <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                <p class="m-0 text-uppercase">{{ $what_to_see->title }}</p>
+                <p class="m-0 text-uppercase">{{ $post->title }}</p>
             </div>
         </div>
     </div>
@@ -29,14 +27,16 @@
                 <div class="pb-3">
                     <div class="blog-item">
                         <div class="position-relative">
-                            <img class="img-fluid w-100" src="/storage/{{ $what_to_see->image }}" alt="{{ $what_to_see->title }}" style="object-fit: cover; max-height: 400px;">
+                            <img class="img-fluid w-100" src="/storage/{{ $post->image }}" alt="{{ $post->title }}" style="object-fit: cover; max-height: 400px;">
                         </div>
                     </div>
                     <div class="bg-white mb-3" style="padding: 30px;">
                         <div class="d-flex mb-3">
-                            <a class="text-primary text-uppercase text-decoration-none" href="">{{__("menu.What to do in Karakalpakstan")}}</a>
+                            <a class="text-primary text-uppercase text-decoration-none" href="">
+                                {{ $post->title }}
+                            </a>
                         </div>
-                        {!! $what_to_see->content !!}
+                        {!! $post->content !!}
                     </div>
                 </div>
                 <!-- Blog Detail End -->
