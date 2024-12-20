@@ -9,13 +9,13 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                 <div class="navbar-nav ml-auto py-0">
-                    <a href="/about" class="nav-item nav-link active" data-aos="fade-right">About Karakalpakstan</a>
-                    <a href="{{ route('what_to_see') }}" class="nav-item nav-link" data-aos="fade-right">What to do in Karakalpakstan</a>
-                    <a href="/about-dmo" class="nav-item nav-link" data-aos="fade-right">About DMO</a>
-                    <a href="{{ route('travelers') }}" class="nav-item nav-link" data-aos="fade-right">Info for travelers</a>
+                    <a href="/about" class="nav-item nav-link {{ request()->routeIs('about') ? 'active' : ''}}" data-aos="fade-right">{{__("menu.About Karakalpakstan")}}</a>
+                    <a href="{{ route('what_to_see') }}" class="nav-item nav-link {{ request()->routeIs(['what_to_see', 'what_to_see.*']) ? 'active' : ''}}" data-aos="fade-right">{{__("menu.What to do in Karakalpakstan")}}</a>
+                    <a href="/about-dmo" class="nav-item nav-link {{ request()->routeIs('about-dmo') ? 'active' : ''}}" data-aos="fade-right">{{__("menu.About DMO")}}</a>
+                    <a href="{{ route('travelers') }}" class="nav-item nav-link {{ request()->routeIs('travelers') ? 'active' : ''}}" data-aos="fade-right">{{__("menu.Info for travelers")}}</a>
                     <div class="nav-item dropdown" data-aos="fade-right">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-                            Language {{ session('language') }}
+                            {{__("menu.Language")}}
                         </a>
                         <div class="dropdown-menu border-0 rounded-0 m-0">
                             <a href="{{ route('switch-language', 'en') }}" class="dropdown-item">

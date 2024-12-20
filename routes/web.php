@@ -27,9 +27,11 @@ Route::get('/what-to-see', [App\Http\Controllers\HomeController::class, 'what_to
 Route::get('/what-to-see/{id}', [App\Http\Controllers\HomeController::class, 'what_to_see_show'])->name('what_to_see.show');
 
 
-Route::get('/about', function () {
-    return view('frontend.about');
-});
+// Route::get('/about', function () {
+//     return view('frontend.about');
+// })->name('about');
+
+Route::get('/about', [App\Http\Controllers\HomeController::class, 'about'])->name('about');
 
 // about-dmo
 Route::get('/about-dmo', [App\Http\Controllers\HomeController::class, 'about_dmo'])->name('about-dmo');

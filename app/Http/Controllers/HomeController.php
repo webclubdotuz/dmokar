@@ -65,7 +65,8 @@ class HomeController extends Controller
 
     public function about()
     {
-        return view('frontend.about');
+        $page = Page::where('url', 'about')->first();
+        return view('frontend.about', compact('page'));
     }
 
     public function about_dmo()
