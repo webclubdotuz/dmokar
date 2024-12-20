@@ -7,11 +7,13 @@
 <div class="container-fluid page-header">
     <div class="container">
         <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-            <h3 class="display-4 text-white text-uppercase">Info for travelers</h3>
+            <h3 class="display-4 text-white text-uppercase text-center">
+                {{ $page->title }}
+            </h3>
             <div class="d-inline-flex text-white">
-                <p class="m-0 text-uppercase"><a class="text-white" href="/">Home</a></p>
+                <p class="m-0 text-uppercase"><a class="text-white" href="/">{{ __('Home') }}</a></p>
                 <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                <p class="m-0 text-uppercase">Info for travelers</p>
+                <p class="m-0 text-uppercase">{{ $page->title }}</p>
             </div>
         </div>
     </div>
@@ -33,8 +35,12 @@
             </div>
         </div>
         <div class="text-center mb-3 pb-3">
-            <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Packages</h6>
-            <h1>Pefect Tour Packages</h1>
+            <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">
+                {{ __('Packages') }}
+            </h6>
+            <h1>
+                {{ __('Pefect Tour Packages') }}
+            </h1>
         </div>
         <div class="row">
             @foreach($travelers as $traveler)
