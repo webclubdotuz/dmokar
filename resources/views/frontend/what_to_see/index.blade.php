@@ -18,6 +18,16 @@
 
 <div class="container-fluid py-5">
     <div class="container pt-5 pb-3">
+        <div class="col-12">
+            <div class="">
+                <h1 class="mb-3">
+                    {{ $page->title }}
+                </h1>
+                <p>
+                    {!! $page->content !!}
+                </p>
+            </div>
+        </div>
         <div class="text-center mb-3 pb-3">
             <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Destination</h6>
             <h1>The best places to visit in Karakalpakstan region</h1>

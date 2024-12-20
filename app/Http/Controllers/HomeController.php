@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Page;
 use App\Models\Partner;
 use App\Models\Post;
 use App\Models\Traveler;
@@ -29,7 +30,9 @@ class HomeController extends Controller
 
         $travelers = Traveler::orderBy('created_at', 'desc')->get();
 
-        return view('frontend.travelers.index', compact('travelers'));
+        $page = Page::where('url', 'travelers')->first();
+
+        return view('frontend.travelers.index', compact('travelers', 'page'));
     }
 
 
@@ -37,7 +40,11 @@ class HomeController extends Controller
     {
         $what_to_sees = WhatToSee::orderBy('created_at', 'desc')->get();
 
-        return view('frontend.what_to_see.index', compact('what_to_sees'));
+        $page = Page::where('url', 'what-to-see')->first();
+
+        // dd($page);
+
+        return view('frontend.what_to_see.index', compact('what_to_sees', 'page'));
     }
 
 
@@ -54,6 +61,18 @@ class HomeController extends Controller
     {
         session(['language' => $locale]);
         return redirect()->back();
+    }
+
+    public function about()
+    {
+        return view('frontend.about');
+    }
+
+    public function about_dmo()
+    {
+        $page = Page::where('url', 'about-dmo')->first();
+
+        return view('frontend.about-dmo', compact('page'));
     }
 
 

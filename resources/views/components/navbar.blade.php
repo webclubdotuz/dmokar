@@ -11,7 +11,7 @@
                 <div class="navbar-nav ml-auto py-0">
                     <a href="/about" class="nav-item nav-link active" data-aos="fade-right">About Karakalpakstan</a>
                     <a href="{{ route('what_to_see') }}" class="nav-item nav-link" data-aos="fade-right">What to do in Karakalpakstan</a>
-                    <a href="/" class="nav-item nav-link" data-aos="fade-right">About DMO</a>
+                    <a href="/about-dmo" class="nav-item nav-link" data-aos="fade-right">About DMO</a>
                     <a href="{{ route('travelers') }}" class="nav-item nav-link" data-aos="fade-right">Info for travelers</a>
                     <div class="nav-item dropdown" data-aos="fade-right">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">

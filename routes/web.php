@@ -30,3 +30,6 @@ Route::get('/what-to-see/{id}', [App\Http\Controllers\HomeController::class, 'wh
 Route::get('/about', function () {
     return view('frontend.about');
 });
+
+// about-dmo
+Route::get('/about-dmo', [App\Http\Controllers\HomeController::class, 'about_dmo'])->name('about-dmo');
