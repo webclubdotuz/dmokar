@@ -5,11 +5,13 @@
 <div class="container-fluid page-header">
     <div class="container">
         <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-            <h3 class="display-4 text-white text-uppercase">What to see in Karakalpakstan</h3>
+            <h3 class="display-4 text-white text-uppercase">
+                {{ $page->title }}
+            </h3>
             <div class="d-inline-flex text-white">
-                <p class="m-0 text-uppercase"><a class="text-white" href="">Home</a></p>
+                <p class="m-0 text-uppercase"><a class="text-white" href="">{{ __('Home') }}</a></p>
                 <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                <p class="m-0 text-uppercase">What to see in Karakalpakstan</p>
+                <p class="m-0 text-uppercase">{{ $page->title }}</p>
             </div>
         </div>
     </div>
@@ -29,8 +31,8 @@
             </div>
         </div>
         <div class="text-center mb-3 pb-3">
-            <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Destination</h6>
-            <h1>The best places to visit in Karakalpakstan region</h1>
+            <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">{{__("Destination")}}</h6>
+            <h1>{{__("The best places to visit in Karakalpakstan region")}}</h1>
         </div>
         <div class="row">
             @foreach ($what_to_sees as $what_to_sees)

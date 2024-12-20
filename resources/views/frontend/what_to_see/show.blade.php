@@ -28,14 +28,6 @@
                     <div class="blog-item">
                         <div class="position-relative">
                             <img class="img-fluid w-100" src="/storage/{{ $what_to_see->image }}" alt="{{ $what_to_see->title }}" style="object-fit: cover; max-height: 400px;">
-                            <div class="blog-date">
-                                <h6 class="font-weight-bold mb-n1">
-                                    {{ $what_to_see->created_at->format('d') }}
-                                </h6>
-                                <small class="text-white text-uppercase">
-                                    {{ $what_to_see->created_at->format('M') }}
-                                </small>
-                            </div>
                         </div>
                     </div>
                     <div class="bg-white mb-3" style="padding: 30px;">
