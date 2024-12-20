@@ -4,8 +4,8 @@
             <a href="" class="navbar-brand text-center mb-4">
                 <img class="img-fluid" src="/frontend/img/dmo-logo-light.png" alt="" style="width: 150px;">
             </a>
-            <p>Promotion of the Republic of Karakalpakstan in the global tourism market and increasing the influx of tourists</p>
-            <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
+            <p>{{__("Promotion of the Republic of Karakalpakstan in the global tourism market and increasing the influx of tourists")}}</p>
+            <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">{{__("Follow Us")}}</h6>
             <div class="d-flex justify-content-start" data-aos="zoom-in">
                 <a class="btn btn-outline-primary btn-square mr-2" href="https://t.me/DMO_Karakalpakstan" target="_blank"><i class="fab fa-telegram"></i></a>
                 <a class="btn btn-outline-primary btn-square mr-2" href="https://www.instagram.com/dmo_karakalpakstan?igsh=Nzh3dmpybDBnN3Fr" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -13,16 +13,18 @@
             </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up">
-            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Usefull Links</h5>
+            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">{{__("Usefull Links")}}</h5>
             <div class="d-flex flex-column justify-content-start">
-                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Karakalpakstan</a>
-                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>What to do in Karakalpakstan</a>
-                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About DMO</a>
-                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Info for travelers</a>
+                <a class="text-white-50 mb-2" href="{{ route('about') }}"><i class="fa fa-angle-right mr-2"></i>{{__("menu.About Karakalpakstan")}}</a>
+                <a class="text-white-50 mb-2" href="{{ route('what_to_see') }}"><i class="fa fa-angle-right mr-2"></i>{{__("menu.What to do in Karakalpakstan")}}</a>
+                <a class="text-white-50 mb-2" href="{{ route('about-dmo') }}"><i class="fa fa-angle-right mr-2"></i>{{__("menu.About DMO")}}</a>
+                <a class="text-white-50 mb-2" href="{{ route('travelers') }}"><i class="fa fa-angle-right mr-2"></i>{{__("menu.Info for travelers")}}</a>
             </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-right">
-            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
+            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">
+                {{__("Contact Us")}}
+            </h5>
             <p><i class="fa fa-map-marker-alt mr-2"></i>Republic of Karakalpakstan, city of Nukus, Sayaxatshilar street, 10/2</p>
             <p><i class="fa fa-phone-alt mr-2"></i>+998950592727</p>
             <p><i class="fa fa-envelope mr-2"></i>welcome@dmo-karakalpakstan.uz</p>
