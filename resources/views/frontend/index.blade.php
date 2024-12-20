@@ -232,7 +232,7 @@
                     <div class="col-lg-4 col-md-6 mb-4 pb-2">
                         <div class="blog-item">
                             <div class="position-relative">
-                                <img class="img-fluid w-100" src="/frontend/img/blog-1.jpg" alt="">
+                                <img class="img-fluid w-100" src="/storage/{{ $post->image }}" alt="{{ $post->title }}">
                                 <div class="blog-date">
                                     <h6 class="font-weight-bold mb-n1">
                                         {{ $post->created_at->format('d') }}
