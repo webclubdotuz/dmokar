@@ -37,8 +37,8 @@
                 </div>
             </div>
             <div class="text-center mb-3 pb-3">
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Packages</h6>
-                <h1>Pefect Tour Packages</h1>
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">{{__("Packages")}}</h6>
+                <h1>{{__("Pefect Tour Packages")}}</h1>
             </div>
             <div class="row">
                 @foreach ($travelers as $traveler)
