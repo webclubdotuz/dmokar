@@ -42,7 +42,7 @@ class PostResource extends Resource
                     ->required(),
                 Forms\Components\FileUpload::make('image')
                     ->image()
-                    ->imageEditor('cropper')
+                    ->imageEditor()
                     ->imageResizeMode('cover')
                     ->optimize('jpg')
                     ->directory('posts')

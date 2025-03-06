@@ -189,14 +189,14 @@
                         <div class="blog-item">
                             <div class="position-relative">
                                 <img class="img-fluid w-100" src="/storage/{{ $post->image }}" alt="{{ $post->title }}">
-                                <div class="blog-date">
+                                {{-- <div class="blog-date">
                                     <h6 class="font-weight-bold mb-n1">
                                         {{ $post->created_at->format('d') }}
                                     </h6>
                                     <small class="text-white text-uppercase">
                                         {{ $post->created_at->format('M') }}
                                     </small>
-                                </div>
+                                </div> --}}
                             </div>
                             <div class="bg-white p-4">
                                 <a class="h5 m-0 text-decoration-none" href="{{ route('post.show', $post->id) }}">
