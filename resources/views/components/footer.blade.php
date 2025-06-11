@@ -26,7 +26,7 @@
                 {{__("Contact Us")}}
             </h5>
             <p><i class="fa fa-map-marker-alt mr-2"></i>Republic of Karakalpakstan, city of Nukus, Sayaxatshilar street, 10/2</p>
-            <p><i class="fa fa-phone-alt mr-2"></i>+998950592727</p>
+            <p><i class="fa fa-phone-alt mr-2"></i>+998973550790</p>
             <p><i class="fa fa-envelope mr-2"></i>welcome@dmo-karakalpakstan.uz</p>
         </div>
     </div>
