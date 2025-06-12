@@ -21,23 +21,6 @@
     </div>
     <!-- Carousel End -->
 
-    <!-- Destination Start -->
-    <div class="container-fluid py-5">
-        <div class="container pt-5 pb-3">
-            <div class="text-center mb-3 pb-3" data-aos="fade-up">
-                <h3 class="text-primary text-uppercase" style="letter-spacing: 5px;">{{__("Download our free tourist phrasebook")}}</h3>
-                <h6>
-                    {{__("Planning a trip to Karakalpakstan? We’ve prepared a brief phrasebook with useful expressions in Karakalpak, Uzbek, Russian, and English. It will help you communicate with locals and feel more confident during your journey.")}}
-                </h6>
-                <a href="{{ asset('phrasebook.pdf') }}" class="btn btn-primary mt-3" download>
-                    <i class="fa fa-download mr-2"></i> {{__("Download the phrasebook (PDF)")}}
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- Destination Start -->
-
-
     <!-- About Start -->
     <div class="container-fluid py-5">
         <div class="container pt-5">
@@ -187,6 +170,21 @@
     </div>
     <!-- Testimonial End -->
 
+    <!-- Destination Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-3 pb-3" data-aos="fade-up">
+                <h3 class="text-primary text-uppercase" style="letter-spacing: 5px;">{{__("Download our free tourist phrasebook")}}</h3>
+                <h6>
+                    {{__("Planning a trip to Karakalpakstan? We’ve prepared a brief phrasebook with useful expressions in Karakalpak, Uzbek, Russian, and English. It will help you communicate with locals and feel more confident during your journey.")}}
+                </h6>
+                <a href="{{ asset('phrasebook.pdf') }}" class="btn btn-primary mt-3" download>
+                    <i class="fa fa-download mr-2"></i> {{__("Download the phrasebook (PDF)")}}
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Destination Start -->
 
     <!-- Blog Start -->
     <div class="container-fluid py-5">

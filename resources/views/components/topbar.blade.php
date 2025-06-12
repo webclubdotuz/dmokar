@@ -5,7 +5,7 @@
                 <div class="d-inline-flex align-items-center" data-aos="zoom-in">
                     <p><i class="fa fa-envelope mr-2"></i>welcome@dmo-karakalpakstan.uz</p>
                     <p class="text-body px-3">|</p>
-                    <p><i class="fa fa-phone-alt mr-2"></i>+998950592727</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>+998913807077</p>
                 </div>
             </div>
             <div class="col-lg-6 text-center text-lg-right" data-aos="zoom-in">
