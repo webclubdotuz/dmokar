@@ -15,7 +15,7 @@ class HomeController extends Controller
     {
         $travelers = Traveler::orderBy('created_at', 'desc')->limit(6)->get();
         $what_to_sees = WhatToSee::orderBy('created_at', 'desc')->limit(6)->get();
-        $posts = Post::orderBy('created_at', 'desc')->limit(9)->get();
+        $posts = Post::orderBy('created_at', 'desc')->limit(45)->get();
 
         $partners = Partner::all();
 
