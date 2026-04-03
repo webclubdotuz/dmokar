@@ -17,17 +17,17 @@
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
                             {{__("menu.Language")}}
                         </a>
-                        <div class="dropdown-menu border-0 rounded-0 m-0">
-                            <a href="{{ route('switch-language', 'en') }}" class="dropdown-item">
+                        <div class="dropdown-menu dropdown-menu-right border-0 shadow rounded m-0">
+                            <a href="{{ route('switch-language', 'en') }}" class="dropdown-item {{ app()->getLocale() == 'en' ? 'active' : '' }}">
                                 English
                             </a>
-                            <a href="{{ route('switch-language', 'ru') }}" class="dropdown-item">
+                            <a href="{{ route('switch-language', 'ru') }}" class="dropdown-item {{ app()->getLocale() == 'ru' ? 'active' : '' }}">
                                 Русский
                             </a>
-                            <a href="{{ route('switch-language', 'kaa') }}" class="dropdown-item">
+                            <a href="{{ route('switch-language', 'kaa') }}" class="dropdown-item {{ app()->getLocale() == 'kaa' ? 'active' : '' }}">
                                 Qaraqalpaqsha
                             </a>
-                            <a href="{{ route('switch-language', 'uz') }}" class="dropdown-item">
+                            <a href="{{ route('switch-language', 'uz') }}" class="dropdown-item {{ app()->getLocale() == 'uz' ? 'active' : '' }}">
                                 O'zbek
                             </a>
                         </div>

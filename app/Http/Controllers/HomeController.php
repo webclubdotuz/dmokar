@@ -15,7 +15,7 @@ class HomeController extends Controller
     {
         $travelers = Traveler::orderBy('created_at', 'desc')->limit(6)->get();
         $what_to_sees = WhatToSee::orderBy('created_at', 'desc')->limit(6)->get();
-        $posts = Post::orderBy('created_at', 'desc')->limit(45)->get();
+        $posts = Post::orderBy('created_at', 'desc')->limit(9)->get();
 
         $partners = Partner::all();
 
@@ -75,7 +75,14 @@ class HomeController extends Controller
         return view('frontend.about-dmo', compact('page'));
     }
 
-    // post_show
+    public function posts()
+    {
+        $posts = Post::orderBy('created_at', 'desc')->paginate(9);
+        $page = Page::where('url', 'posts')->first();
+
+        return view('frontend.post.index', compact('posts', 'page'));
+    }
+
     public function post_show($id)
     {
         $post = Post::find($id);

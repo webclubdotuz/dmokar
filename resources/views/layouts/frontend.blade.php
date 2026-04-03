@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ app()->getLocale() }}">
 
 <head>
     <meta charset="utf-8">
-    <title>DMO Karakalpakstan</title>
+    <title>@yield('title', 'DMO Karakalpakstan — Qaraqalpaqstan turizm destinatsiyasi')</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="DMO Karakalpakstan" name="keywords">
-    <meta content="DMO Karakalpakstan" name="description">
+    <meta name="description" content="@yield('meta_description', 'DMO Karakalpakstan — Qaraqalpaqstanníń turizm imkaniyatlari, sayyohlik marshrutlari, mehmánxanalar hám ko\'rinistarli orınlar háqqında maǵlıwmat.')">
+    <meta name="keywords" content="@yield('meta_keywords', 'DMO Karakalpakstan, Qaraqalpaqstan turizm, Aral teńizi, Mo\'ynak, sayyohlik, travel Karakalpakstan')">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ url()->current() }}">
 
+    <!-- Open Graph -->
+    <meta property="og:title" content="@yield('title', 'DMO Karakalpakstan')">
+    <meta property="og:description" content="@yield('meta_description', 'DMO Karakalpakstan — Qaraqalpaqstanníń turizm imkaniyatlari háqqında maǵlıwmat.')">
+    <meta property="og:image" content="@yield('og_image', asset('frontend/img/favicon.ico'))">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:type" content="@yield('og_type', 'website')">
+    <meta property="og:locale" content="{{ app()->getLocale() }}">
+    <meta property="og:site_name" content="DMO Karakalpakstan">
 
     <!-- Favicon -->
     <link href="/frontend/img/favicon.ico" rel="icon">

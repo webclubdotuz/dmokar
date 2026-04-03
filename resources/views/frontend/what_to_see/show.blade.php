@@ -1,5 +1,11 @@
 @extends('layouts.frontend')
 
+@section('title', $what_to_see->title . ' — DMO Karakalpakstan')
+@section('meta_description', Str::limit(strip_tags($what_to_see->content), 160))
+@if($what_to_see->image)
+@section('og_image', asset('storage/' . $what_to_see->image))
+@endif
+
 @section('content')
 <!-- Header Start -->
 <div class="container-fluid page-header">

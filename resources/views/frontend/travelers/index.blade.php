@@ -1,6 +1,7 @@
 @extends('layouts.frontend')
 
-
+@section('title', 'Tur paketler — DMO Karakalpakstan')
+@section('meta_description', 'Qaraqalpaqstan boyınsha eń jaqsı tur paketler — Aral teńizi, Mo\'ynak, Mizdaqxan hám basqa ko\'rinistarli orınlarǵa sayyohlik.')
 
 @section('content')
     <!-- Header Start -->

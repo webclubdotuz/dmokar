@@ -26,6 +26,7 @@ Route::get('/switch-language/{locale}', [App\Http\Controllers\HomeController::cl
 Route::get('/what-to-see', [App\Http\Controllers\HomeController::class, 'what_to_see'])->name('what_to_see');
 Route::get('/what-to-see/{id}', [App\Http\Controllers\HomeController::class, 'what_to_see_show'])->name('what_to_see.show');
 
+Route::get('/posts', [App\Http\Controllers\HomeController::class, 'posts'])->name('posts.index');
 Route::get('/post/{id}', [App\Http\Controllers\HomeController::class, 'post_show'])->name('post.show');
 
 

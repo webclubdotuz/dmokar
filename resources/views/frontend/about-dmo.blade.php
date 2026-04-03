@@ -1,5 +1,7 @@
 @extends('layouts.frontend')
 
+@section('title', 'DMO háqqında — DMO Karakalpakstan')
+@section('meta_description', 'DMO Karakalpakstan tashkilatı, maqsetleri hám Qaraqalpaqstan turizmdi rawajlandırıw boyınsha jumısları háqqında.')
 
 @section('content')
  <!-- Header Start -->

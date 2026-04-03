@@ -1,5 +1,8 @@
 @extends('layouts.frontend')
 
+@section('title', 'Neni kóriw kerek — DMO Karakalpakstan')
+@section('meta_description', 'Qaraqalpaqstandaǵı ko\'rinistarli orınlar — Aral teńizi, Mo\'ynak, muzeyler hám tarixiy orınlar.')
+
 @section('content')
 <!-- Header Start -->
 <div class="container-fluid page-header">

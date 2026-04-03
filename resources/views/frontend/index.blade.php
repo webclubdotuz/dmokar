@@ -1,5 +1,9 @@
 @extends('layouts.frontend')
 
+@section('title', 'DMO Karakalpakstan — Qaraqalpaqstan turizm destinatsiyasi')
+@section('meta_description', 'Qaraqalpaqstanníń turizm imkaniyatlari, sayyohlik marshrutlari, Aral teńizi, Mo\'ynak hám basqa ko\'rinistarli orınlar háqqında maǵlıwmat.')
+@section('meta_keywords', 'DMO Karakalpakstan, Qaraqalpaqstan turizm, Aral teńizi, Mo\'ynak, sayyohlik, travel')
+
 @section('content')
     <!-- Carousel Start -->
     <div class="container-fluid p-0">
@@ -199,27 +203,32 @@
             </div>
             <div class="row pb-3">
                 @foreach ($posts as $post)
-                    <div class="col-lg-4 col-md-6 mb-4 pb-2">
-                        <div class="blog-item">
-                            <div class="position-relative">
-                                <img class="img-fluid w-100" src="/storage/{{ $post->image }}" alt="{{ $post->title }}">
-                                {{-- <div class="blog-date">
-                                    <h6 class="font-weight-bold mb-n1">
-                                        {{ $post->created_at->format('d') }}
-                                    </h6>
-                                    <small class="text-white text-uppercase">
-                                        {{ $post->created_at->format('M') }}
-                                    </small>
-                                </div> --}}
+                    <div class="col-lg-4 col-md-6 mb-4 pb-2 d-flex">
+                        <div class="blog-item d-flex flex-column w-100">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="/storage/{{ $post->image }}" alt="{{ $post->title }}" style="height: 250px; object-fit: cover;">
+                                <div class="blog-date">
+                                    <h6 class="font-weight-bold mb-n1">{{ $post->created_at->format('d') }}</h6>
+                                    <small class="text-white text-uppercase">{{ $post->created_at->format('M') }}</small>
+                                </div>
                             </div>
-                            <div class="bg-white p-4">
-                                <a class="h5 m-0 text-decoration-none" href="{{ route('post.show', $post->id) }}">
+                            <div class="bg-white p-4 d-flex flex-column flex-grow-1">
+                                <a class="h5 text-decoration-none" href="{{ route('post.show', $post->id) }}">
                                     {{ $post->title }}
                                 </a>
+                                <p class="text-muted mt-2 mb-3 flex-grow-1">{{ Str::limit(strip_tags($post->content), 100) }}</p>
+                                <div>
+                                    <a href="{{ route('post.show', $post->id) }}" class="btn btn-sm btn-primary">
+                                        {{ __('Read More') }} <i class="fa fa-arrow-right ml-1"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 @endforeach
+            </div>
+            <div class="text-center mt-3">
+                <a href="{{ route('posts.index') }}" class="btn btn-primary px-4 py-2">{{ __('Load More') }}</a>
             </div>
         </div>
     </div>
