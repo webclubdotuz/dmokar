@@ -20,7 +20,10 @@ class WhatToSeeResource extends Resource
     use Translatable;
     protected static ?string $model = WhatToSee::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-map-pin';
+    protected static ?string $navigationGroup = 'Туризм';
+    protected static ?string $navigationLabel = 'Что посмотреть';
+    protected static ?int $navigationSort = 1;
 
     public static function getTranslatableLocales(): array
     {

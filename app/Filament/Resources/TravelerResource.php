@@ -23,7 +23,10 @@ class TravelerResource extends Resource
 
     protected static ?string $model = Traveler::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-globe-alt';
+    protected static ?string $navigationGroup = 'Туризм';
+    protected static ?string $navigationLabel = 'Тур пакеты';
+    protected static ?int $navigationSort = 2;
 
     public static function getTranslatableLocales(): array
     {

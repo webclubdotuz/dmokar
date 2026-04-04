@@ -20,7 +20,10 @@ class PageResource extends Resource
     use Translatable;
     protected static ?string $model = Page::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-document-text';
+    protected static ?string $navigationGroup = 'Контент';
+    protected static ?string $navigationLabel = 'Страницы';
+    protected static ?int $navigationSort = 2;
 
     public static function getTranslatableLocales(): array
     {

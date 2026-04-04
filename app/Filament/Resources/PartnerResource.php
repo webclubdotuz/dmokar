@@ -17,11 +17,10 @@ class PartnerResource extends Resource
 {
     protected static ?string $model = Partner::class;
 
-    protected static string $icon = 'heroicon-o-rectangle-stack';
-
-    protected static $title = 'Партнеры';
-
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-building-office';
+    protected static ?string $navigationGroup = 'Управление';
+    protected static ?string $navigationLabel = 'Партнёры';
+    protected static ?int $navigationSort = 1;
 
     public static function form(Form $form): Form
     {
