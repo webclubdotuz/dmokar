@@ -45,9 +45,9 @@ class WhatToSeeResource extends Resource
                     ->required(),
                     Forms\Components\FileUpload::make('image')
                     ->image()
-                    ->imageEditor('cropper')
+                    ->imageEditor()
                     ->imageResizeMode('cover')
-                    ->optimize('jpg')
+
                     ->directory('what_to_see')
                     ->imageCropAspectRatio('16:9')
                     ->imageEditorAspectRatios([

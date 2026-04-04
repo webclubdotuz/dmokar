@@ -45,9 +45,9 @@ class PageResource extends Resource
                     ->required(),
                 Forms\Components\FileUpload::make('image')
                     ->image()
-                    ->imageEditor('cropper')
+                    ->imageEditor()
                     ->imageResizeMode('cover')
-                    ->optimize('jpg')
+
                     ->directory('posts')
                     ->imageCropAspectRatio('16:9')
                     ->imageEditorAspectRatios([

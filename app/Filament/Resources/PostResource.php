@@ -56,7 +56,6 @@ class PostResource extends Resource
                             ->image()
                             ->imageEditor()
                             ->imageResizeMode('cover')
-                            ->optimize('jpg')
                             ->directory('posts')
                             ->imageCropAspectRatio('16:9')
                             ->imageEditorAspectRatios(['16:9'])

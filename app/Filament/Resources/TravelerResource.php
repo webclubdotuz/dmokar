@@ -47,9 +47,9 @@ class TravelerResource extends Resource
                     ->prefix('uzs'),
                 Forms\Components\FileUpload::make('image')
                 ->image()
-                ->imageEditor('cropper')
+                ->imageEditor()
                 ->imageResizeMode('cover')
-                ->optimize('jpg')
+
                 ->directory('traveler')
                 ->imageCropAspectRatio('16:9')
                 ->imageEditorAspectRatios([
