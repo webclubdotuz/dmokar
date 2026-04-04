@@ -9575,6 +9575,15 @@ h6,
   background-size: cover;
 }
 
+.page-header .display-4 {
+  font-size: clamp(1.2rem, 4vw, 3rem);
+  font-weight: 600;
+}
+
+.page-header .text-uppercase p {
+  font-size: clamp(0.7rem, 2.5vw, 1rem);
+}
+
 .destination-item img {
   transition: .5s;
 }
