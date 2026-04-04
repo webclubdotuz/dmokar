@@ -79,6 +79,19 @@
     <script src="/frontend/js/main.js"></script>
     <script>
         AOS.init();
+
+        // Lazy load hero video
+        document.addEventListener('DOMContentLoaded', function () {
+            var video = document.getElementById('heroVideo');
+            if (video) {
+                var source = video.querySelector('source[data-src]');
+                if (source) {
+                    source.src = source.getAttribute('data-src');
+                    source.removeAttribute('data-src');
+                    video.load();
+                }
+            }
+        });
     </script>
 </body>
 

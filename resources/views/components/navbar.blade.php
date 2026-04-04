@@ -13,6 +13,7 @@
                     <a href="{{ route('what_to_see') }}" class="nav-item nav-link {{ request()->routeIs(['what_to_see', 'what_to_see.*']) ? 'active' : ''}}" data-aos="fade-right">{{__("menu.What to do in Karakalpakstan")}}</a>
                     <a href="/about-dmo" class="nav-item nav-link {{ request()->routeIs('about-dmo') ? 'active' : ''}}" data-aos="fade-right">{{__("menu.About DMO")}}</a>
                     <a href="{{ route('travelers') }}" class="nav-item nav-link {{ request()->routeIs('travelers') ? 'active' : ''}}" data-aos="fade-right">{{__("menu.Info for travelers")}}</a>
+                    <a href="{{ route('posts.index') }}" class="nav-item nav-link {{ request()->routeIs(['posts.index', 'post.*']) ? 'active' : ''}}" data-aos="fade-right">{{__("menu.Posts")}}</a>
                     <div class="nav-item dropdown" data-aos="fade-right">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
                             {{__("menu.Language")}}

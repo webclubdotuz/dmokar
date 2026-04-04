@@ -5,5 +5,6 @@ return [
     "What to do in Karakalpakstan" => "Что делать в Каракалпакстане",
     "About DMO" => "О ДМО",
     "Info for travelers" => "Информация для путешественников",
+    "Posts" => "Новости",
     "Language" => "Язык",
 ];

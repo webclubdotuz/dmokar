@@ -47,6 +47,7 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow-x: hidden;
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -62,6 +63,7 @@ body {
   color: #656565;
   text-align: left;
   background-color: #F3F3F3;
+  overflow-x: hidden;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -9496,8 +9498,8 @@ h6,
 .back-to-top {
   position: fixed;
   display: none;
-  right: 45px;
-  bottom: 45px;
+  right: 15px;
+  bottom: 15px;
   z-index: 11;
 }
 
@@ -9743,7 +9745,7 @@ h6,
   width: 60px;
   height: 45px;
   top: 30px;
-  left: -15px;
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9752,15 +9754,7 @@ h6,
 }
 
 .blog-date::after {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 0;
-  top: -15px;
-  left: 0;
-  border: 8px solid;
-  border-color: transparent #21446e #21446e transparent;
-  z-index: -1;
+  display: none;
 }
 
 .contact-form .help-block ul {

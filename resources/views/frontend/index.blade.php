@@ -9,16 +9,13 @@
     <div class="container-fluid p-0">
         <div id="header-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active" style="backdrop-filter: blur(10px)">
-                    <video muted autoplay loop style="height: 600px; object-fit: cover;  width: 100%;">
-                        <source src="/video/dmo.mp4" type="video/mp4" style="width: 100%">
+                <div class="carousel-item active">
+                    <video id="heroVideo" muted autoplay loop playsinline preload="none"
+                        poster="/frontend/img/carousel-1.jpg"
+                        style="height: 600px; object-fit: cover; width: 100%;">
+                        <source data-src="/video/dmo.mp4" type="video/mp4">
                     </video>
-                    {{-- <video muted autoplay loop style="height: 600px;  ">
-                        <source src="/video/dmo.mp4" type="video/mp4">
-                    </video> --}}
                 </div>
-
-
             </div>
 
         </div>
