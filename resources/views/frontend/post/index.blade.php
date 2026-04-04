@@ -33,7 +33,7 @@
                     <div class="col-lg-4 col-md-6 mb-4 pb-2 d-flex">
                         <div class="blog-item d-flex flex-column w-100">
                             <div class="position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="/storage/{{ $post->image }}" alt="{{ $post->title }}" style="height: 250px; object-fit: cover;">
+                                <img class="img-fluid w-100" src="/storage/{{ $post->image }}" alt="{{ $post->title }}" style="height: 250px; object-fit: cover;" loading="lazy">
                                 <div class="blog-date">
                                     <h6 class="font-weight-bold mb-n1">{{ $post->created_at->format('d') }}</h6>
                                     <small class="text-white text-uppercase">{{ $post->created_at->format('M') }}</small>

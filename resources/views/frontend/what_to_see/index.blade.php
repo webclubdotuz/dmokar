@@ -12,7 +12,7 @@
                 {{ $page->title }}
             </h3>
             <div class="d-inline-flex text-white">
-                <p class="m-0 text-uppercase"><a class="text-white" href="">{{ __('Home') }}</a></p>
+                <p class="m-0 text-uppercase"><a class="text-white" href="/">{{ __('Home') }}</a></p>
                 <i class="fa fa-angle-double-right pt-1 px-3"></i>
                 <p class="m-0 text-uppercase">{{ $page->title }}</p>
             </div>
@@ -38,16 +38,19 @@
             <h1>{{__("The best places to visit in Karakalpakstan region")}}</h1>
         </div>
         <div class="row">
-            @foreach ($what_to_sees as $what_to_sees)
+            @foreach ($what_to_sees as $item)
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="destination-item position-relative overflow-hidden mb-2">
-                    <img class="img-fluid" src="/storage/{{ $what_to_sees->image }}" alt="{{ $what_to_sees->title }}">
-                    <a class="destination-overlay text-white text-decoration-none" href="{{ route('what_to_see.show', $what_to_sees->id) }}">
-                        <h5 class="text-white">{{ $what_to_sees->title }}</h5>
+                    <img class="img-fluid" src="/storage/{{ $item->image }}" alt="{{ $item->title }}" loading="lazy">
+                    <a class="destination-overlay text-white text-decoration-none" href="{{ route('what_to_see.show', $item->id) }}">
+                        <h5 class="text-white">{{ $item->title }}</h5>
                     </a>
                 </div>
             </div>
             @endforeach
+        </div>
+        <div class="d-flex justify-content-center">
+            {{ $what_to_sees->links('pagination::bootstrap-4') }}
         </div>
     </div>
 </div>

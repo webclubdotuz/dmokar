@@ -1,18 +1,18 @@
 <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
     <div class="row pt-5">
-        <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-left">
-            <a href="" class="navbar-brand text-center mb-4">
-                <img class="img-fluid" src="/frontend/img/dmo-logo-light.png" alt="" style="width: 150px;">
+        <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="800">
+            <a href="/" class="navbar-brand text-center mb-4">
+                <img class="img-fluid" src="/frontend/img/dmo-logo-light.png" alt="DMO Karakalpakstan" style="width: 150px;">
             </a>
             <p>{{__("Promotion of the Republic of Karakalpakstan in the global tourism market and increasing the influx of tourists")}}</p>
             <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">{{__("Follow Us")}}</h6>
-            <div class="d-flex justify-content-start" data-aos="zoom-in">
+            <div class="d-flex justify-content-start" data-aos="fade-up" data-aos-delay="200">
                 <a class="btn btn-outline-primary btn-square mr-2" href="https://t.me/DMO_Karakalpakstan" target="_blank"><i class="fab fa-telegram"></i></a>
                 <a class="btn btn-outline-primary btn-square mr-2" href="https://www.instagram.com/dmo_karakalpakstan?igsh=Nzh3dmpybDBnN3Fr" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a class="btn btn-outline-primary btn-square mr-2" href="https://www.youtube.com/@DMOKarakalpakstan" target="_blank"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
-        <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up">
+        <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
             <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">{{__("Usefull Links")}}</h5>
             <div class="d-flex flex-column justify-content-start">
                 <a class="text-white-50 mb-2" href="{{ route('about') }}"><i class="fa fa-angle-right mr-2"></i>{{__("menu.About Karakalpakstan")}}</a>
@@ -21,7 +21,7 @@
                 <a class="text-white-50 mb-2" href="{{ route('travelers') }}"><i class="fa fa-angle-right mr-2"></i>{{__("menu.Info for travelers")}}</a>
             </div>
         </div>
-        <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-right">
+        <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
             <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">
                 {{__("Contact Us")}}
             </h5>

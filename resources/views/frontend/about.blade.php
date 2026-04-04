@@ -13,7 +13,7 @@
             </h3>
             <div class="d-inline-flex text-white">
                 <p class="m-0 text-uppercase">
-                    <a class="text-white" href="">
+                    <a class="text-white" href="/">
                         {{ __('Home') }}
                     </a>
                 </p>

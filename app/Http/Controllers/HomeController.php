@@ -27,7 +27,7 @@ class HomeController extends Controller
     public function travelers()
     {
 
-        $travelers = Traveler::latest('id')->get();
+        $travelers = Traveler::latest('id')->paginate(12);
 
         $page = Page::where('url', 'travelers')->first();
 
@@ -37,7 +37,7 @@ class HomeController extends Controller
 
     public function what_to_see()
     {
-        $what_to_sees = WhatToSee::latest('id')->get();
+        $what_to_sees = WhatToSee::latest('id')->paginate(12);
 
         $page = Page::where('url', 'what-to-see')->first();
 
@@ -49,7 +49,7 @@ class HomeController extends Controller
 
     public function what_to_see_show($id)
     {
-        $what_to_see = WhatToSee::find($id);
+        $what_to_see = WhatToSee::findOrFail($id);
 
         return view('frontend.what_to_see.show', compact('what_to_see'));
     }
@@ -85,7 +85,7 @@ class HomeController extends Controller
 
     public function post_show($id)
     {
-        $post = Post::find($id);
+        $post = Post::findOrFail($id);
 
         return view('frontend.post.show', compact('post'));
     }

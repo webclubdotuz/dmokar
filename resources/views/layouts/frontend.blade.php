@@ -13,7 +13,7 @@
     <!-- Open Graph -->
     <meta property="og:title" content="@yield('title', 'DMO Karakalpakstan')">
     <meta property="og:description" content="@yield('meta_description', 'DMO Karakalpakstan — Qaraqalpaqstanníń turizm imkaniyatlari háqqında maǵlıwmat.')">
-    <meta property="og:image" content="@yield('og_image', asset('frontend/img/favicon.ico'))">
+    <meta property="og:image" content="@yield('og_image', asset('frontend/img/carousel-1.jpg'))">
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:type" content="@yield('og_type', 'website')">
     <meta property="og:locale" content="{{ app()->getLocale() }}">
@@ -37,6 +37,35 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="/frontend/css/style.css" rel="stylesheet">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "DMO Karakalpakstan",
+        "url": "{{ url('/') }}",
+        "logo": "{{ asset('frontend/img/dmo-logo.png') }}",
+        "description": "Destination Management Organization of Karakalpakstan",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Sayaxatshilar street, 10/2",
+            "addressLocality": "Nukus",
+            "addressRegion": "Karakalpakstan",
+            "addressCountry": "UZ"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+998913807077",
+            "contactType": "customer service"
+        },
+        "sameAs": [
+            "https://t.me/DMO_Karakalpakstan",
+            "https://www.instagram.com/dmo_karakalpakstan",
+            "https://www.youtube.com/@DMOKarakalpakstan"
+        ]
+    }
+    </script>
 </head>
 
 <body>
@@ -59,7 +88,7 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top" aria-label="Back to top"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
 
 
     <!-- JavaScript Libraries -->
@@ -78,7 +107,13 @@
     <!-- Template Javascript -->
     <script src="/frontend/js/main.js"></script>
     <script>
-        AOS.init();
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                once: true,
+                easing: 'ease-out-cubic',
+                offset: 80
+            });
+        });
 
         // Lazy load hero video
         document.addEventListener('DOMContentLoaded', function () {

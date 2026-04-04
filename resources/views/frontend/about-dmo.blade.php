@@ -9,17 +9,17 @@
     <div class="container">
         <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
             <h3 class="display-4 text-white text-uppercase text-center">
-                {{ $page->title }}
+                {{ $page?->title }}
             </h3>
             <div class="d-inline-flex text-white">
                 <p class="m-0 text-uppercase">
-                    <a class="text-white" href="">
+                    <a class="text-white" href="/">
                         {{ __('Home') }}
                     </a>
                 </p>
                 <i class="fa fa-angle-double-right pt-1 px-3"></i>
                 <p class="m-0 text-uppercase">
-                    {{ $page->title }}
+                    {{ $page?->title }}
                 </p>
             </div>
         </div>
@@ -34,10 +34,10 @@
             <div class="col-lg-12">
                 <div class="">
                     <h1 class="mb-3">
-                        {{ $page->title }}
+                        {{ $page?->title }}
                     </h1>
                     <p>
-                        {!! $page->content !!}
+                        {!! $page?->content !!}
                     </p>
                 </div>
             </div>

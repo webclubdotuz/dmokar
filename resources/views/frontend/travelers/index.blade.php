@@ -45,7 +45,7 @@
                 @foreach ($travelers as $traveler)
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="package-item bg-white mb-2">
-                            <img class="img-fluid" src="/storage/{{ $traveler->image }}" alt="{{ $traveler->title }}">
+                            <img class="img-fluid" src="/storage/{{ $traveler->image }}" alt="{{ $traveler->title }}" loading="lazy">
                             <div class="p-4">
                                 <div class="d-flex justify-content-between mb-3">
                                     <small class="m-0"><i
@@ -62,6 +62,11 @@
                         </div>
                     </div>
                 @endforeach
+            </div>
+        </div>
+    </div>
+            <div class="d-flex justify-content-center">
+                {{ $travelers->links('pagination::bootstrap-4') }}
             </div>
         </div>
     </div>

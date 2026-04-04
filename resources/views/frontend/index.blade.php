@@ -29,10 +29,10 @@
                 <div class="col-lg-6" style="min-height: 500px;">
                     <div class="position-relative h-100">
                         <img class="position-absolute w-100 h-100" src="/frontend/img/about.jpg" style="object-fit: cover;"
-                            data-aos="fade-up">
+                            data-aos="fade-right" data-aos-duration="1000">
                     </div>
                 </div>
-                <div class="col-lg-6 pt-5 pb-lg-5" data-aos="fade-down">
+                <div class="col-lg-6 pt-5 pb-lg-5" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
                     <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
                         <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">
                             {{__("About Us")}}
@@ -45,10 +45,10 @@
                         </p>
                         <div class="row mb-4">
                             <div class="col-6">
-                                <img class="img-fluid" src="/frontend/img/about-1.jpg" alt="">
+                                <img class="img-fluid" src="/frontend/img/about-1.jpg" alt="Karakalpakstan landscape" loading="lazy">
                             </div>
                             <div class="col-6">
-                                <img class="img-fluid" src="/frontend/img/about-2.jpg" alt="">
+                                <img class="img-fluid" src="/frontend/img/about-2.jpg" alt="Karakalpakstan culture" loading="lazy">
                             </div>
                         </div>
                         <a href="{{ route('what_to_see') }}" class="btn btn-primary mt-1">
@@ -65,15 +65,15 @@
     <!-- Destination Start -->
     <div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
-            <div class="text-center mb-3 pb-3" data-aos="fade-up">
+            <div class="text-center mb-3 pb-3" data-aos="fade-down" data-aos-duration="800">
                 <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">{{__("Destination")}}</h6>
                 <h1>{{__("The best places to visit in Karakalpakstan region")}}</h1>
             </div>
             <div class="row">
                 @foreach ($what_to_sees as $what_to_see)
-                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="{{ $loop->index * 150 }}">
                         <div class="destination-item position-relative overflow-hidden mb-2">
-                            <img class="img-fluid" src="/storage/{{ $what_to_see->image }}" alt="{{ $what_to_see->title }}">
+                            <img class="img-fluid" src="/storage/{{ $what_to_see->image }}" alt="{{ $what_to_see->title }}" loading="lazy">
                             <a class="destination-overlay text-white text-decoration-none"
                                 href="{{ route('what_to_see.show', $what_to_see->id) }}">
                                 <h5 class="text-white">{{ $what_to_see->title }}</h5>
@@ -82,7 +82,7 @@
                     </div>
                 @endforeach
 
-                <div class="col-12 text-center" data-aos="fade-left">
+                <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="600">
                     <a href="{{ route('what_to_see') }}" class="btn btn-primary py-md-3 px-md-5 mt-2">
                         {{__("Load More")}}
                     </a>
@@ -91,22 +91,22 @@
             </div>
         </div>
     </div>
-    <!-- Destination Start -->
+    <!-- Destination End -->
 
 
 
     <!-- Packages Start -->
     <div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
-            <div class="text-center mb-3 pb-3" data-aos="fade-up">
+            <div class="text-center mb-3 pb-3" data-aos="fade-down" data-aos-duration="800">
                 <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">{{__("Packages")}}</h6>
                 <h1>{{__("Pefect Tour Packages")}}</h1>
             </div>
             <div class="row">
                 @foreach ($travelers as $traveler)
-                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="flip-up" data-aos-duration="800" data-aos-delay="{{ $loop->index * 200 }}">
                         <div class="package-item bg-white mb-2">
-                            <img class="img-fluid" src="/storage/{{ $traveler->image }}" alt="{{ $traveler->title }}">
+                            <img class="img-fluid" src="/storage/{{ $traveler->image }}" alt="{{ $traveler->title }}" loading="lazy">
                             <div class="p-4">
                                 <div class="d-flex justify-content-between mb-3">
                                     <small class="m-0"><i
@@ -124,7 +124,7 @@
                     </div>
                 @endforeach
 
-                <div class="col-12 text-center" data-aos="fade-left">
+                <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="600">
                     <a href="{{ route('travelers') }}" class="btn btn-primary py-md-3 px-md-5 mt-2">
                         {{__("Load More")}}
                     </a>
@@ -139,8 +139,8 @@
     <div class="container-fluid bg-registration py-5" style="margin: 90px 0;">
         <div class="container py-5">
             <div class="row align-items-center">
-                <div class="col-lg-12 mb-5 mb-lg-0 text-center">
-                    <img class="img-fluid" src="/frontend/img/dmo-logo-light.png" style="height: 200px;" alt="">
+                <div class="col-lg-12 mb-5 mb-lg-0 text-center" data-aos="zoom-in" data-aos-duration="1200">
+                    <img class="img-fluid" src="/frontend/img/dmo-logo-light.png" style="height: 200px;" alt="DMO Karakalpakstan" loading="lazy">
                 </div>
             </div>
         </div>
@@ -152,7 +152,7 @@
     <!-- Testimonial Start -->
     <div class="container-fluid py-5">
         <div class="container py-5">
-            <div class="text-center mb-3 pb-3">
+            <div class="text-center mb-3 pb-3" data-aos="fade-down" data-aos-duration="800">
                 <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">
                     {{__("Partners")}}
                 </h6>
@@ -163,7 +163,7 @@
             <div class="owl-carousel testimonial-carousel">
                 @foreach ($partners as $partner)
                 <div class="text-center">
-                    <img class="img-fluid mx-auto border" src="/storage/{{ $partner->logo }}" style="width: 200px; height: 200px;" alt="{{ $partner->name }}">
+                    <img class="img-fluid mx-auto border" src="/storage/{{ $partner->logo }}" style="width: 200px; height: 200px;" alt="{{ $partner->name }}" loading="lazy">
                 </div>
                 @endforeach
             </div>
@@ -174,12 +174,12 @@
     <!-- Destination Start -->
     <div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
-            <div class="text-center mb-3 pb-3" data-aos="fade-up">
+            <div class="text-center mb-3 pb-3" data-aos="fade-up" data-aos-duration="1000">
                 <h3 class="text-primary text-uppercase" style="letter-spacing: 5px;">{{__("Download our free tourist phrasebook")}}</h3>
                 <h6>
-                    {{__("Planning a trip to Karakalpakstan? We’ve prepared a brief phrasebook with useful expressions in Karakalpak, Uzbek, Russian, and English. It will help you communicate with locals and feel more confident during your journey.")}}
+                    {!! __("Planning a trip to Karakalpakstan? We've prepared a brief phrasebook with useful expressions in Karakalpak, Uzbek, Russian, and English. It will help you communicate with locals and feel more confident during your journey.") !!}
                 </h6>
-                <a href="{{ asset('phrasebook.pdf') }}" class="btn btn-primary mt-3" download>
+                <a href="/phrasebook.pdf" class="btn btn-primary mt-3" download data-aos="zoom-in" data-aos-delay="300">
                     <i class="fa fa-download mr-2"></i> {{__("Download the phrasebook (PDF)")}}
                 </a>
             </div>
@@ -190,7 +190,7 @@
     <!-- Blog Start -->
     <div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
-            <div class="text-center mb-3 pb-3">
+            <div class="text-center mb-3 pb-3" data-aos="fade-down" data-aos-duration="800">
                 <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">
                     {{__("Our Blog")}}
                 </h6>
@@ -200,10 +200,10 @@
             </div>
             <div class="row pb-3">
                 @foreach ($posts as $post)
-                    <div class="col-lg-4 col-md-6 mb-4 pb-2 d-flex">
+                    <div class="col-lg-4 col-md-6 mb-4 pb-2 d-flex" data-aos="fade-up" data-aos-duration="700" data-aos-delay="{{ $loop->index * 150 }}">
                         <div class="blog-item d-flex flex-column w-100">
                             <div class="position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="/storage/{{ $post->image }}" alt="{{ $post->title }}" style="height: 250px; object-fit: cover;">
+                                <img class="img-fluid w-100" src="/storage/{{ $post->image }}" alt="{{ $post->title }}" style="height: 250px; object-fit: cover;" loading="lazy">
                                 <div class="blog-date">
                                     <h6 class="font-weight-bold mb-n1">{{ $post->created_at->format('d') }}</h6>
                                     <small class="text-white text-uppercase">{{ $post->created_at->format('M') }}</small>
