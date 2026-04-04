@@ -216,7 +216,7 @@
                                 <a class="h5 text-decoration-none" href="{{ route('post.show', $post->id) }}">
                                     {{ $post->title }}
                                 </a>
-                                <p class="text-muted mt-2 mb-3 flex-grow-1">{{ Str::limit(strip_tags($post->content), 100) }}</p>
+                                <p class="text-muted mt-2 mb-3 flex-grow-1">{{ Str::limit(html_entity_decode(strip_tags($post->content)), 100) }}</p>
                                 <div>
                                     <a href="{{ route('post.show', $post->id) }}" class="btn btn-sm btn-primary">
                                         {{ __('Read More') }} <i class="fa fa-arrow-right ml-1"></i>

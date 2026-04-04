@@ -13,9 +13,9 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $travelers = Traveler::orderBy('created_at', 'desc')->limit(6)->get();
-        $what_to_sees = WhatToSee::orderBy('created_at', 'desc')->limit(6)->get();
-        $posts = Post::orderBy('created_at', 'desc')->limit(9)->get();
+        $travelers = Traveler::latest('id')->limit(6)->get();
+        $what_to_sees = WhatToSee::latest('id')->limit(6)->get();
+        $posts = Post::latest('id')->limit(9)->get();
 
         $partners = Partner::all();
 
@@ -27,7 +27,7 @@ class HomeController extends Controller
     public function travelers()
     {
 
-        $travelers = Traveler::orderBy('created_at', 'desc')->get();
+        $travelers = Traveler::latest('id')->get();
 
         $page = Page::where('url', 'travelers')->first();
 
@@ -37,7 +37,7 @@ class HomeController extends Controller
 
     public function what_to_see()
     {
-        $what_to_sees = WhatToSee::orderBy('created_at', 'desc')->get();
+        $what_to_sees = WhatToSee::latest('id')->get();
 
         $page = Page::where('url', 'what-to-see')->first();
 
@@ -77,7 +77,7 @@ class HomeController extends Controller
 
     public function posts()
     {
-        $posts = Post::orderBy('created_at', 'desc')->paginate(9);
+        $posts = Post::latest('id')->paginate(9);
         $page = Page::where('url', 'posts')->first();
 
         return view('frontend.post.index', compact('posts', 'page'));

@@ -1,7 +1,7 @@
 @extends('layouts.frontend')
 
 @section('title', $post->title . ' — DMO Karakalpakstan')
-@section('meta_description', Str::limit(strip_tags($post->content), 160))
+@section('meta_description', Str::limit(html_entity_decode(strip_tags($post->content)), 160))
 @section('og_type', 'article')
 @if($post->image)
 @section('og_image', asset('storage/' . $post->image))
